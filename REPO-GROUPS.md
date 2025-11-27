@@ -1,60 +1,84 @@
-# 仓库分组
+# GitHub 仓库分组
 
-## Go 语言学习 <!-- 60高地 -->
-- Practice-Go-by-Example-
-- GoLearn
-- goWebActualCombat
+仓库所有者: qiao-925
+
+## Go 学习 <!-- 597.9高地 -->
 - Peters-Go-Day-Practice
+- Practice-Go-by-Example-
 - go-admin
-- Peter-Watching-Code
+- ants---learning
+- go
 - Go-LearnCases
 - learn-go-with-tests
 - gin-examples
 - learngo
-- go
+- cellnet
+- goWebActualCombat
+- GoLearn
+- gitea
 
-## Java 语言学习 <!-- 192高地 -->
-- JavaGuide
-- toBeBetterJavaer
-- Java-Ecosystem
-- Strategy-pattern-demo
-- drools-in-action
-- drools-book
-- Elasticsearch-In-Action-Ref-Code
-- elasticsearch-in-action
-- distribute-transaction
-- learn-rocketmq-by-cursor
+## Java 学习 <!-- 537.7高地 -->
 - incubator-seata
-- hmily
+- distribute-transaction
+- incubator-kie-drools
+- drools-book
+- analysis-ik
+- JavaGuide
 - hutool
+- toBeBetterJavaer
 - hippo4j
 - xxl-job
-- incubator-kie-drools
 - elasticsearch
+- elasticsearch-in-action
+- hmily
+- drools-in-action
+- Java-Ecosystem
+- Elasticsearch-In-Action-Ref-Code
+- learn-rocketmq-by-cursor
+- Strategy-pattern-demo
 
-## AI 相关 <!-- 537.7高地 -->
+
+## RAG/AI 学习 <!-- 662.6高地 -->
+- Creating-Systematology-RAG
+- rag-book-demo
+- Building-Data-Driven-Applications-with-LlamaIndex
+- ocr-mcp-service
+- Creating-Systematology-RAG
+- Creating-Systematology-Test
+- Creating-Systematology
+- repo-content-classification
 - rag-in-action
 - rag-book-demo
-- Building-Data-Driven-Applications-with-LlamaIndexGo go go.
-- Resume
+- Building-Data-Driven-Applications-with-LlamaIndex
+- ocr-mcp-service
+
+
+## 工具项目 <!-- 54号高地 -->
+- github-repos-manager
+- get_jobs
+- geekgeekrun
+- hugo
+- get_jobs
+
+## 个人
+- Assemble
 - Inspiration
 - qiao-925
-- geekgeekrun
-- examples
-- Assemble
+- Resume
 
-## 未分类 <!-- 140高地 -->
-- coding-interview-university
-- system-design-primer
-- the-craft-of-selfteaching
-- cellnet
-- ants---learning
-- mattermost
-- gitea
-- analysis-ik
+
+## 其他资源 <!-- 140高地 -->
 - chinese-independent-developer
 - chinese-independent-blogs
 - awesome-mac
 - 996.ICU
 - 955.WLB
+- mattermost
+- chinese-independent-blogs
+- system-design-primer
+- coding-interview-university
+- system-design-primer
+- the-craft-of-selfteaching
+
+
 
