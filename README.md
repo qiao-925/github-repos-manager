@@ -1,69 +1,69 @@
 # GitHub 仓库管理器
 
-集中管理所有 GitHub 仓库的工具仓库。
+集中管理所有 GitHub 仓库的工具仓库，支持 AI 辅助分组和**按需批量同步**。
 
-## 🎯 功能
+## 🎯 核心功能
 
-- 📋 **分组管理**: 按主题对仓库进行分类
-- 🚀 **按需同步**: 只同步需要的分组，节省时间和空间
-- 🔍 **Workspace 支持**: 为每个分组创建 VS Code/Cursor workspace
-- 📖 **文档索引**: 清晰的分类文档，快速查找仓库
-
-## 📚 仓库分组
-
-查看 [REPO-GROUPS.md](./REPO-GROUPS.md) 了解所有分组。
-
-## 🚀 使用方法
-
-### 同步特定分组
-
-```bash
-# 同步 Go 学习相关仓库
-bash scripts/sync-group.sh go-learning
-
-# 同步 Java 学习相关仓库
-bash scripts/sync-group.sh java-learning
-
-# 同步书籍学习相关仓库
-bash scripts/sync-group.sh book-learning
-```
-
-### 打开 Workspace
-
-1. 在 VS Code/Cursor 中打开对应的 `.code-workspace` 文件
-2. 例如：打开 `workspaces/go-learning.code-workspace` 查看所有 Go 学习仓库
-
-## 📁 目录结构
-
-```
-github-repos-manager/
-├── README.md                    # 本文件
-├── REPO-GROUPS.md              # 仓库分组索引文档
-├── repo-groups.json            # 仓库分组配置文件（JSON格式）
-├── workspaces/                  # VS Code workspace 配置文件
-│   ├── go-learning.code-workspace
-│   ├── java-learning.code-workspace
-│   └── ...
-├── scripts/                     # 同步脚本
-│   ├── sync-group.sh           # 按分组同步脚本
-│   └── sync-all.sh             # 全局同步脚本（可选）
-└── .gitignore                   # Git 忽略配置
-```
+- 📋 **分组管理**: 手动编辑配置文件，灵活分组
+- 🚀 **按需批量同步**: 按分组批量同步仓库，一次可同步多个分组，节省时间和空间
 
 ## 🔧 前置要求
 
+**必须安装 GitHub CLI**，这是使用本工具的前提条件：
+
 1. 安装 [GitHub CLI](https://cli.github.com/)
-2. 登录 GitHub CLI：
+2. 登录认证：
    ```bash
    gh auth login
    ```
 
-## 📝 注意事项
+## 🚀 使用流程
 
-- 仓库会克隆到当前目录的**同级目录**（`../`）
-- 确保有足够的**磁盘空间**和**网络连接**
-- 删除操作**不可逆**，请谨慎使用
+### 步骤 1：创建分类文档并同步
 
-## 🔗 相关链接
+**在 Cursor 对话框中执行 PROMPT**
 
-- 远程仓库: https://github.com/qiao-925/github-repos-manager
+1. 打开 `PROMPT.md`，复制 prompt 模板
+2. 在 Cursor 对话框中执行：`@PROMPT.md 执行当前prompt`
+3. AI 会生成分类文档并展示在对话框中
+4. 检查分类是否合理，如需调整告诉 AI 你的修改意见
+5. 确认满意后，告诉 AI "保存" 或 "持久化"，AI 会保存为 `REPO-GROUPS.md`
+
+**按需批量同步分组**
+
+完成分类后，选择需要同步的分组进行批量同步：
+
+```bash
+# 批量同步单个分组（该分组下的所有仓库）
+bash sync-groups.sh 597.9
+
+# 批量同步多个分组（一次同步多个分组的所有仓库）
+bash sync-groups.sh 597.9 537.7 54号
+
+# 列出所有可用分组
+bash sync-groups.sh --list
+```
+
+💡 **批量同步优势**：一次命令可以同步多个分组，每个分组下的所有仓库会自动批量处理（克隆或更新），大大提高效率。
+
+**文件夹组织**：每个分组会自动创建对应的文件夹（使用代号作为文件夹名，如 `597.9`、`54号`），该分组下的所有仓库会同步到对应的文件夹中，实现清晰的组织结构。
+
+### 步骤 2：打开分组文件夹作为 Workspace
+
+同步完成后，每个分组都有自己的文件夹，可以直接打开文件夹作为 workspace：
+
+1. **在 VS Code/Cursor 中打开分组文件夹**：
+   - 直接打开对应的分组文件夹（如 `597.9`、`54号`）
+   - 该文件夹下的所有仓库都会显示在文件资源管理器中
+   - 可以方便地在同一分组的不同仓库间切换
+
+2. **示例**：
+   ```bash
+   # 同步 Go 学习分组
+   bash sync-groups.sh 597.9
+   
+   # 然后在 VS Code/Cursor 中打开 597.9 文件夹
+   # 该文件夹下包含所有 Go 学习相关的仓库
+   ```
+
+💡 **Workspace 优势**：每个分组文件夹就是一个天然的 workspace，无需额外配置，结构清晰，便于管理嗯
