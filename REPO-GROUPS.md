@@ -2,7 +2,7 @@
 
 仓库所有者: qiao-925
 
-## Go 学习 <!-- 597.9高地 -->
+## Go-Practice <!-- 397.8高地 -->
 - Peters-Go-Day-Practice
 - Practice-Go-by-Example-
 - go-admin
@@ -17,7 +17,7 @@
 - GoLearn
 - gitea
 
-## Java 学习 <!-- 537.7高地 -->
+## Java-Practice <!-- 597.9高地 -->
 - incubator-seata
 - distribute-transaction
 - incubator-kie-drools
@@ -37,48 +37,37 @@
 - learn-rocketmq-by-cursor
 - Strategy-pattern-demo
 
-
-## RAG/AI 学习 <!-- 662.6高地 -->
-- Creating-Systematology-RAG
-- rag-book-demo
-- Building-Data-Driven-Applications-with-LlamaIndex
-- ocr-mcp-service
+## AI-Practice <!-- 1071.1高地 -->
 - Creating-Systematology-RAG
 - Creating-Systematology-Test
 - Creating-Systematology
-- repo-content-classification
-- rag-in-action
 - rag-book-demo
+- rag-in-action
 - Building-Data-Driven-Applications-with-LlamaIndex
 - ocr-mcp-service
+- repo-content-classification
 
-
-## 工具项目 <!-- 54高地 -->
-- github-repos-manager
+## Tools <!-- 382高地 -->
+- github-repos-batch-sync-script
 - get_jobs
 - geekgeekrun
 - hugo
-- get_jobs
+- mattermost
+- examples
 
-## 个人 <!-- 60高地 -->
+## Daily <!-- 112高地 -->
 - Assemble
 - Inspiration
 - qiao-925
 - Resume
 
-
-## 其他资源 <!-- 140高地 -->
+## Resources <!-- 73高地 -->
 - chinese-independent-developer
 - chinese-independent-blogs
 - awesome-mac
 - 996.ICU
 - 955.WLB
-- mattermost
-- chinese-independent-blogs
 - system-design-primer
 - coding-interview-university
-- system-design-primer
 - the-craft-of-selfteaching
-
-
 
