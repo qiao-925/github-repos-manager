@@ -2,6 +2,7 @@
 /*/
 
 # 但保留管理仓库相关的目录和文件
+!lib/
 !scripts/
 !workspaces/
 !docs/
